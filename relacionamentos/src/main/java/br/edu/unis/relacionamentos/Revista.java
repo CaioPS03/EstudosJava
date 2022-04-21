@@ -1,13 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package br.edu.unis.relacionamentos;
 
-/**
- *
- * @author Alunos
- */
 public class Revista {
+    private int codigo;
+    private String titulo;
+    private String tipo;
+    private Edicao edicao;
+
+    public Revista(int codigo, String titulo, String tipo) {
+        this.codigo = codigo;
+        this.titulo = titulo;
+        this.tipo = tipo;
+        this.edicao = new Edicao(7, "10 de Abril", 12);
+    }
     
 }
