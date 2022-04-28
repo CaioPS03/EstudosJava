@@ -9,7 +9,7 @@ public class Teste {
         Dobro dobro = new Dobro();
         dobro.numero = in.nextInt();
         //dobro.numero = 3;
-        System.out.println("O resultado e " + dobro.dobro);
+        System.out.println("O resultado e " + dobro.getDobro());
     }
     
 }
