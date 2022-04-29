@@ -1,13 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.cursoatividades;
 
-/**
- *
- * @author caiot
- */
 public class Desconto {
+    private int valorCompra;
+    private double descontoPercentual = (double) 0.2;
+    private int valorPago;
+
+    public void setValorCompra(int valorCompra) {
+        this.valorCompra = valorCompra;
+    }
+    
+    public int calculoDesconto = (int) (valorCompra * descontoPercentual);
+
+    public int getValorPago() {
+        return (int) (valorCompra - calculoDesconto);
+    }
     
 }

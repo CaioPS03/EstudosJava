@@ -1,13 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.cursoatividades;
 
-/**
- *
- * @author caiot
- */
 public class Area {
+    private int comprimento;
+    private int largura;
+    private int area;
+
+    public void setComprimento(int comprimento) {
+        this.comprimento = comprimento;
+    }
+
+    public void setLargura(int largura) {
+        this.largura = largura;
+    }
+
+    public int getArea() {
+        return (int) (largura * comprimento);
+    }
     
 }

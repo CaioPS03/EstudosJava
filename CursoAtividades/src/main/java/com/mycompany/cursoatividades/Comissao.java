@@ -1,13 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.cursoatividades;
 
-/**
- *
- * @author caiot
- */
 public class Comissao {
+    private int totalVendas;
+    private int comissao;
+
+    public int getComissao() {
+        return (int) (totalVendas * 0.1);
+    }
+
+    public void setTotalVendas(int totalVendas) {
+        this.totalVendas = totalVendas;
+    }
     
 }

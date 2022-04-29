@@ -1,8 +1,12 @@
 package com.mycompany.cursoatividades;
 
 public class Dobro {
-    int numero;
-    int dobro;
+    private int numero;
+    private int dobro;
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
 
     public int getDobro() {
         return numero * 2;
