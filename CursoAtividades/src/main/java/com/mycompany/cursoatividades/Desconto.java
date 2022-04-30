@@ -1,18 +1,32 @@
 package com.mycompany.cursoatividades;
 
 public class Desconto {
-    private int valorCompra;
-    private double descontoPercentual = (double) 0.2;
-    private int valorPago;
+    private double valorCompra;
+    private double descontoPercentual;
+    private double valorPago;
 
-    public void setValorCompra(int valorCompra) {
+    public void setValorCompra(double valorCompra) {
         this.valorCompra = valorCompra;
     }
-    
-    public int calculoDesconto = (int) (valorCompra * descontoPercentual);
 
-    public int getValorPago() {
-        return (int) (valorCompra - calculoDesconto);
+    public void setDescontoPercentual(double descontoPercentual) {
+        this.descontoPercentual = descontoPercentual;
+    }
+    
+    //  Percentual de desconto é transformado em número decimal
+    public double valorDescontado() {
+        return this.descontoPercentual / 100;
+    }
+    
+    //  Calculo de quanto será descontado do valor total da compra
+    public double calculoDesconto() {
+        double desconto = this.valorCompra * this.valorDescontado();
+        return desconto;
+    }
+    
+    //  Calculo do valor a ser pago
+    public double getValorPago() {
+        return valorCompra - calculoDesconto();
     }
     
 }
