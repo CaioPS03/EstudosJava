@@ -33,12 +33,12 @@ public class Teste {
         desconto.setDescontoPercentual(in.nextDouble());
         System.out.println("O valor pago da compra e: " + desconto.getValorPago());
         */
-        /*  //Codigo Conversao
+          //Codigo Conversao
         System.out.println("Digite o valor em dinheiro: ");
         Conversao conversao = new Conversao();
         conversao.setValorEmReais(in.nextDouble());
         System.out.println("O valor em dolares e: " + conversao.valorConvertido());
-        */
+        
     }
     
 }
